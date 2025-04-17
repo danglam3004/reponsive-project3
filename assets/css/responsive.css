@@ -136,14 +136,50 @@
     width: 90%;
     text-align: center;
   }
+  /* phần team list */
+  .team__list {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+  .team-item__img-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* phần install */
+  .install__img {
+    display: none;
+  }
+  .install__content {
+    margin: 0 auto;
+    width: 90%;
+  }
+  /* phần blog */
+  .blog__inner {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .blog__content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog__heading {
+    max-width: 90%;
+  }
 }
 /* Tablet */
-@media (min-width: 768px) and (max-width: 991.98) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* footer */
+  .footer-hidden-tablet {
+    display: none;
+  }
+  .footer__top {
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+  }
 }
 /* Mobile */
 @media (max-width: 767.98px) {
 }
 /* tạm ẩn phần không liên quan */
-.footer {
-  display: none;
-}
